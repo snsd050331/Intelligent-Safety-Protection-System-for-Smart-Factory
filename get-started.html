@@ -1,0 +1,155 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>機器人組 - 智能安全防護系統</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.factory-wrapper {
+				background: #404040;
+				min-height: calc(100vh - 44px);
+				padding: 4em 0;
+			}
+
+			.factory-wrapper .inner {
+				width: 100%;
+				max-width: 1100px;
+				margin: 0 auto;
+				display: flex;
+				align-items: stretch;
+				gap: clamp(1em, 2vw, 2.5em);
+				padding: 0 clamp(1.5em, 3vw, 4em);
+				box-sizing: border-box;
+			}
+
+			.projects-panel {
+				flex: 1 1 25%;
+				min-width: 200px;
+				background: rgba(255, 255, 255, 0.08);
+				color: #fff;
+				border-radius: 8px;
+				padding: 1.5em;
+				box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+			}
+
+			.projects-panel h2 {
+				font-size: 1.25em;
+				margin-bottom: 1em;
+				color: #fff;
+			}
+
+			.project-list {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			.project-list li + li {
+				margin-top: 0.75em;
+			}
+
+			.project-link {
+				display: block;
+				padding: 0.75em 1em;
+				background: rgba(0, 0, 0, 0.35);
+				border-radius: 6px;
+				color: #fff;
+				text-decoration: none;
+				border: 1px solid rgba(255, 255, 255, 0.1);
+				transition: background 0.2s ease, border 0.2s ease;
+			}
+
+			.project-link:hover,
+			.project-link:focus {
+				background: rgba(0, 0, 0, 0.55);
+				border-color: rgba(255, 255, 255, 0.3);
+				outline: none;
+			}
+
+			.project-link.is-active {
+				background: rgba(108, 192, 145, 0.25);
+				border-color: rgba(108, 192, 145, 0.6);
+			}
+
+			.detail-panel {
+				flex: 3 1 0;
+				background: rgba(0, 0, 0, 0.25);
+				border-radius: 8px;
+				padding: 2em;
+				min-height: 320px;
+				box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+				color: #fff;
+			}
+
+			#header .inner {
+				display: flex;
+				align-items: center;
+				gap: 1em;
+			}
+
+			#header #nav {
+				margin-left: auto;
+			}
+
+			#header .navPanelToggle {
+				margin-left: 0.75em;
+			}
+
+			@media screen and (max-width: 980px) {
+				.factory-wrapper {
+					padding: 3em 1.5em;
+				}
+
+				.factory-wrapper .inner {
+					flex-direction: column;
+					padding: 0;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				.factory-wrapper {
+					padding: 2.5em 1.25em;
+				}
+			}
+		</style>
+	</head>
+	<body class="subpage">
+		<header id="header">
+			<div class="inner">
+				<a href="index.html" class="logo">機器人組 - 智能安全防護系統</a>
+				<nav id="nav">
+					<a href="index.html">Home</a>
+				</nav>
+				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+			</div>
+		</header>
+
+		<section class="wrapper factory-wrapper">
+			<div class="inner">
+				<aside class="projects-panel" aria-label="專案列表">
+					<h2>專案列表</h2>
+					<ul class="project-list">
+						<li><a href="#" class="project-link" data-view="smart-factory">智慧工廠-安全防護監控</a></li>
+						<li><a href="#" class="project-link" data-view="bridge-protection">中頻爐架橋防護</a></li>
+						<li><a href="#" class="project-link" data-view="remote-maintenance">雲端維護支援專案</a></li>
+					</ul>
+				</aside>
+				<section class="detail-panel" aria-label="資料區">
+					<p>請從左側選擇專案，以檢視詳細資訊與最新更新。</p>
+				</section>
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div class="inner">
+				<p class="copyright">&copy; 機器人組 - 智能安全防護系統 | 專注於智慧工廠與工安防護解決方案</p>
+			</div>
+		</footer>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
